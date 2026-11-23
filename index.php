@@ -2,6 +2,7 @@
 include_once "bdd.php";
 include_once "utility.php";
 require_once("crud/activite.php");
+require_once("crud/session.php");
 
 
 
@@ -18,6 +19,11 @@ get("/activities/:activitieId", function ($param) {
 });
 
 
+get("/activities/:activitieId/session/:sessionId", function ($param) {
+    $conn = db();
+    $session_id = $param['sessionId'];
+    return getSession($conn, $session_id); 
+});
 
 post("/activities/:activitieId/marks", function ($param) {
     $activitie_id = $param['activitieId'];
