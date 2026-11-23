@@ -19,6 +19,37 @@ get("/activities/:activitieId", function ($param) {
 
 
 
+post("/activities/:activitieId/marks", function ($param) {
+    $activitie_id = $param['activitieId'];
+});
+
+post("/activities/:activitieId/comments", function ($param) {
+    $activitie_id = $param['activitieId'];
+});
+
+post("/activities/:activitieId/sessions/:sessionId", function ($param) {
+    $activitie_id = $param['activitieId'];
+    $session_id = $param['sessionId'];
+});
+
+
+delete("/activities/:activitieId/marks", function ($param) {
+    $activitie_id = $param['activitieId'];
+});
+
+delete("/activities/:activitieId/comments", function ($param) {
+    $activitie_id = $param['activitieId'];
+});
+
+delete("/activities/:activitieId/sessions/:sessionId", function ($param) {
+    $activitie_id = $param['activitieId'];
+    $session_id = $param['sessionId'];
+});
+
+
+
+
+
 
 
 get("/learners/:learnerId", function ($param) {
