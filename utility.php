@@ -18,7 +18,7 @@ function _make($method, $path, $callback)
                 $i++;
             }
             if (!$error) {
-                echo json_encode($callback($param));
+                echo json_encode($callback($param), JSON_UNESCAPED_UNICODE);
                 exit;
             }
         }

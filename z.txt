@@ -17,3 +17,8 @@
 
 6. Pour tester une modification : sauvegarder le PHP, puis actualiser la page.
    Pour arrêter le serveur : Ctrl+C dans le terminal.
+
+
+
+
+   ssh -N -L 127.0.0.1:3307:127.0.0.1:3306 info_gr12@141.95.191.245
