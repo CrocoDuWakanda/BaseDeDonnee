@@ -1,24 +1,11 @@
-1. Ouvrir le dossier du projet dans VS Code (celui où se trouve index.php).
-   Si le projet vient d’être cloné, y remettre aussi bdd.php, qui est ignoré par Git.
+php -v
 
-2. Ouvrir un terminal PowerShell dans VS Code et vérifier si PHP est installé :
-   php -v
+winget install --id PHP.PHP.8.4 --exact
 
-3. Si une version s’affiche, passer directement à l’étape 4.
-   Si « php » est introuvable et que le poste autorise l’installation :
-   winget install --id PHP.PHP.8.4 --exact
-   Puis fermer et rouvrir VS Code et retaper php -v.
+php -S 127.0.0.1:8000 index.php
 
-4. Depuis le dossier du projet, lancer le serveur (S majuscule) :
-   php -S 127.0.0.1:8000 index.php
-
-5. Laisser le terminal ouvert et aller dans le navigateur à cette adresse :
-   http://127.0.0.1:8000/info306/gr12/learners/1
-
-6. Pour tester une modification : sauvegarder le PHP, puis actualiser la page.
-   Pour arrêter le serveur : Ctrl+C dans le terminal.
+http://127.0.0.1:8000/info306/gr12/
 
 
 
-
-   ssh -N -L 127.0.0.1:3307:127.0.0.1:3306 info_gr12@141.95.191.245
+ssh -N -L 127.0.0.1:3307:127.0.0.1:3306 info_gr12@141.95.191.245
